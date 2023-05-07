@@ -16,7 +16,7 @@ const ProductItem = ({ product }) => {
       <p className="my-2">{product.price}</p>
       <button
         className="bg-red-600 text-white w-full py-[3px] mb-4 hover:bg-red-500 transition-all rounded-sm"
-        onClick={() => addToCart()}
+        onClick={() => addToCart(product)}
         disabled={findProduct}
       >
         Sepete Ekle
